@@ -83,7 +83,6 @@ header p {
     flex: 1;
 }
 
-
 .col {
     display: flex;
     flex-direction: column;
