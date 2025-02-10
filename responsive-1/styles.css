@@ -62,7 +62,6 @@ picture {
     display: flex;
     flex-direction: column;
     min-height: 100px;
-    gap: min(0px, 1rem);
     background-color: aliceblue;
     align-self: end;
     padding: .5rem;
