@@ -1,0 +1,145 @@
+:root {
+    --ff-montserrat: 'Montserrat', serif;
+    --ff-fraunces: 'Fraunces', serif;
+    
+    --fs-300: .75rem;
+    --fs-400: .875rem;
+    --fs-500: 1rem;
+    --fs-800: 2rem;
+    
+    --fw-normal: 500;
+    --fw-bold: 700;
+
+    --c-dark-cyan: hsl(158, 36%, 37%);
+    --c-cream: hsl(30, 38%, 92%);
+
+    --c-very-dark-blue: hsl(212, 21%, 14%);
+    --c-dark-grayish-blue: hsl(228, 12%, 48%);
+    --c-dark-green: hsl(152, 53%, 17%);
+    --c-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-normal);
+    line-height: 1.5;
+    color: var(--c-dark-grayish-blue);
+    background-color: var(--c-cream);
+}
+
+main {
+    max-width: 625px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    
+    object-fit: cover;
+}
+
+h1 {
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-800);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    color: var(--c-very-dark-blue);
+}
+
+.product-card {
+    border-radius: 12px;
+    background-color: var(--c-white);
+}
+
+.product-card img {
+    border-radius: 12px 12px 0 0;
+}
+
+.desktop-pic {
+    display: none;
+}
+
+.content {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.category {
+    font-size: var(--fs-300);
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price span:first-child {
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-800);
+    color: var(--c-dark-cyan);
+    margin-right: 1rem;
+}
+
+.price span:last-child {
+    font-size: var(--fs-300);
+    text-decoration: line-through;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: var(--c-dark-cyan);
+    font-weight: var(--fw-bold);
+    color: var(--c-white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 1rem ;
+}
+
+.btn:hover {
+    background-color: var(--c-dark-green);
+}
+
+@media screen and (min-width: 600px) {
+    .mobile-pic {
+        display: none;
+    }
+
+    .desktop-pic {
+        display: block;
+    }
+
+    .product-card {
+        display: flex;
+    }
+
+    .product-card > * {
+        width: 50%;
+    }
+    
+    .product-card img {
+        height: 100%;
+        border-radius: 12px 0 0 12px;
+    }
+    
+    .content {
+        padding: 2rem;
+    }
+}
