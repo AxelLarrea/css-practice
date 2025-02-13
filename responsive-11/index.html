@@ -4,17 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
     <title>Responsive practice 11 | Stats preview card component</title>
 </head>
 <body>
-    Get insights that help your business grow.
+    <main>
+        <div class="card">
+            <div class="cover-image-container">
+                <img class="mobile" src="./images/image-header-mobile.jpg" alt="Cover image">
+                <img class="desktop" src="./images/image-header-desktop.jpg" alt="Cover image">
+                <div class="color-filter"></div>
+            </div>
 
-    Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-    experience, and overall efficiency.
+            <div class="content">
+                <h1 class="title">Get <span>insights</span> that help your business grow.</h1>
+                <p class="description">
+                    Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+                    experience, and overall efficiency.
+                </p>
 
-    10k+ companies
-    314 templates
-    12m+ queries
+                <div class="stats">
+                    <div class="stat">
+                        <h2>10k+</h2> 
+                        <p>COMPANIES</p>
+                    </div>
+                    <div class="stat">
+                        <h2>314</h2>
+                        <p>TEMPLATES</p>
+                    </div>
+                    <div class="stat">
+                        <h2>12M+</h2>
+                        <p>QUERIES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
