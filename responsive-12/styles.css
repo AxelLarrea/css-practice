@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --font-karla: 'Karla', serif;
+
+    --color-primary-cyan: hsl(179, 62%, 43%);
+    --color-primary-light-cyan: hsla(179, 62%, 43%, .7);
+    --color-primary-light-yellow: hsl(71, 73%, 54%);
+
+    --color-neutral-light-gray: hsl(204, 43%, 93%);
+    --color-neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+

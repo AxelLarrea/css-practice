@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    
+    <title>Responsive practice 12 | Single Price Grid Component</title>
+</head>
+<body class="font-karla text-base py-8 bg-neutral-light-gray"> 
+    <main class="max-w-[680px] m-auto p-8">
+        <div class="grid rounded-md bg-white">
+            <section class="grid gap-4 p-6 sm:pr-28 sm:p-9.5">
+                <h1 class="text-xl font-bold text-primary-cyan">Join our community</h1>
+                <p class="font-bold text-primary-light-yellow">30-day, hassle-free money back guarantee</p>
+                <p class="text-sm/6  text-neutral-grayish-blue">Gain access to our full library of tutorials along with expert code reviews. 
+                    Perfect for any developers who are serious about honing their skills.</p>
+            </section>
+            
+            <div class="grid sm:flex">
+                <section class="flex-1 grid gap-4 p-6 sm:rounded-bl-md sm:p-9.5 bg-primary-cyan text-white">
+                    <h2 class="font-bold text-lg">Monthly Subscription</h2>
+                    <div class="grid gap-1">
+                        <div class="flex items-center gap-3">
+                            <h3 class="font-bold text-3xl">&dollar;29</h3>
+                            <span class="font-normal text-sm text-neutral-light-gray">per month</span>
+                        </div>
+                        <p>Full access for less than $1 a day</p>
+                    </div>
+                    <button class="cursor-pointer mt-3 p-3 rounded-md bg-primary-light-yellow shadow-lg">Sign Up</button>
+                </section>
+        
+                <section class="flex-1 text-sm font-normal text-white p-6 rounded-b-md sm:p-9.5 sm:rounded-bl-none sm:rounded-br-md bg-primary-light-cyan">
+                    <h3 class="text-lg font-bold pb-4">Why Us</h3>
+                    <p>Tutorials by industry experts</p>
+                    <p>Peer &amp; expert code review</p>
+                    <p>Coding exercises</p>
+                    <p>Access to our GitHub repos</p>
+                    <p>Community forum</p>
+                    <p>Flashcard decks</p>
+                    <p>New videos every week</p>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
