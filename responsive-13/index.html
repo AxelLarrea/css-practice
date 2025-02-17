@@ -4,16 +4,56 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="output.css">
+
 	<title>Responsive practice 12 | Huddle landing page with single introductory section</title>
 </head>
-<body>
+<body class="max-w-[1300px] mx-auto font-open-sans bg-primary-violet p-9 bg-[url(./images/bg-mobile.svg)] bg-no-repeat bg-contain md:bg-[url(./images/bg-desktop.svg)] md:bg-center md:bg-contain md:py-16 md:px-12">
+	<header class="mb-14">
+		<img class="w-32 md:w-48" src="./images/logo.svg" alt="Huddle's logo">
+	</header>
 
-	Build The Community Your Fans Will Love
+	<main class="grid gap-16 md:flex md:gap-0">
+		<div class="md:flex-1">
+			<img class="md:w-full" src="./images/illustration-mockups.svg" alt="Cover image">
+		</div>
+		
+		<div class="grid gap-16 justify-items-center md:flex-1 md:pl-12 md:pt-2 md:max-w-[575px] lg:pt-12">
+			<div class="grid gap-4 justify-items-center text-center md:text-start lg:justify-items-start">
+				<h1 class="font-poppins text-2xl/10 font-semibold text-white tracking-wide px-4 md:px-0 md:text-[2.5rem]">Build The Community Your Fans Will Love</h1>
+				
+				<p class="text-base/6 text-gray-300 px-2 md:px-0 md:text-lg">
+					Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+				</p>
+				
+				<a href="#" class="w-[200px] text-center rounded-full bg-white text-primary-violet cursor-pointer shadow-md shadow-black/25 py-2 md:self-center md:py-4 md:text-lg md:font-medium">
+					Register
+				</a>
+			</div>
 
-	Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-	Create connections with your users as you engage in genuine discussion. 
-
-	Register
+			<div class="flex gap-4 md:items-center lg:justify-self-end">
+				<div class="grid items-center place-items-center rounded-[50%] border border-white bg-transparent p-1.5">
+					<svg class="w-4 h-4 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#fff">
+						<path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+					</svg>
+				</div>
+				
+				<div class="grid items-center place-items-center rounded-[50%] border border-white bg-transparent p-1.5">
+					<svg class="w-4 h-4 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff">
+						<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+					</svg>
+				</div>
+				
+				<div class="grid items-center place-items-center rounded-[50%] border border-white bg-transparent p-1.5">
+					<svg class="w-4 h-4 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff">
+						<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
 </html>

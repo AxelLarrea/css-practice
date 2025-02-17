@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    /* Headings */
+    --font-poppins: "Poppins", serif;
+
+    /* Body */
+    --font-open-sans: "Open Sans", serif; 
+
+    --color-primary-violet: hsl(257, 40%, 49%);
+    --color-primary-soft-magenta: hsl(300, 69%, 71%);
+}
