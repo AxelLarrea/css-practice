@@ -4,33 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <link rel="stylesheet" href="styles.css">
-    <title>Frontend Mentor | Social proof section</title>
-</head>
-<body>
-    10,000+ of our users love our products.
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+    <title>Responsive practice 14 | Social proof section</title>
+</head>
+<body class="font-spartan text-[.9375rem] text-neutral-white min-h-dvh bg-[url(./images/bg-pattern-top-mobile.svg),_url(./images/bg-pattern-bottom-mobile.svg)] bg-[position:top_left,_bottom] bg-no-repeat bg-[size:40%,_50%] md:bg-[url(./images/bg-pattern-top-desktop.svg),_url(./images/bg-pattern-bottom-desktop.svg)] md:bg-[position:top_left,_bottom_right]">
+    <div class="grid gap-12 px-6 py-20 max-w-[1150px] mx-auto">
+        <section class="grid gap-8 md:flex md:items-center md:gap-6">
+            <div class="text-center md:flex-1 md:text-start">
+                <h1 class="font-bold text-[2.5rem]/8 text-primary-very-dark-magenta px-4 pb-6 md:text-[3.25rem]/12 md:pl-0 md:pr-28">10,000+ of our users love our products.</h1>
+                <p class="text-lg/6 font-medium text-neutral-dark-grayish-magenta md:pr-24"> We only provide great products combined with excellent customer service.
+                    See what our satisfied customers are saying about our services.
+                </p>
+            </div>
+            <div class="grid gap-4 sm:flex md:flex-col md:flex-1">
+                <div class="grid gap-2 place-items-center bg-neutral-light-grayish-magenta rounded-lg py-4 sm:flex-1 sm:gap-8 md:flex md:w-[80%] md:max-h-14 md:pl-3 md:pr-0 lg:px-8">
+                    <div class="flex gap-2 sm:items-center">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                    </div>
+                    <p class="text-base font-bold text-primary-very-dark-magenta">Rated 5 Stars in Reviews</p>
+                </div>
+
+                <div class="grid gap-2 place-items-center bg-neutral-light-grayish-magenta rounded-lg py-4 sm:flex-1 sm:gap-8 md:flex md:w-[80%] md:max-h-14 md:pl-3 md:pr-0 lg:px-8 md:self-center">
+                    <div class="flex gap-2">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                    </div>
+                    <p class="text-base font-bold text-primary-very-dark-magenta">Rated 5 Stars in Report Guru</p>
+                </div>
+
+                <div class="grid gap-2 place-items-center bg-neutral-light-grayish-magenta rounded-lg py-4 sm:flex-1 sm:gap-8 md:flex md:w-[80%] md:max-h-14  md:pl-3 md:pr-0 lg:px-8 md:self-end">
+                    <div class="flex gap-2">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                        <img src="./images/icon-star.svg" alt="Rating stars">
+                    </div>
+                    <p class="text-base font-bold text-primary-very-dark-magenta">Rated 5 Stars in BestTech</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid gap-4 md:flex md:gap-8">
+            <div class="bg-primary-very-dark-magenta rounded-lg p-8 md:max-h-[90%] md:pb-14">
+                <div class="flex gap-6 items-center pt-2 pb-6">
+                    <img class="w-10 h-10 rounded-full" src="./images/image-colton.jpg" alt="Profile picture">
+                    <div>
+                        <h2 class="text-base font-semibold pt-0.5">Colton Smith</h2>
+                        <p class="text-base text-primary-soft-pink -mt-1">Verified Buyer</p>
+                    </div>
+                </div>
+                <p class="text-base pr-2">" We needed the same printed design as the one we had ordered a week prior.
+                    Not only did they find the original order, but we also received it in time.
+                    Excellent! "
+                </p>
+            </div>
+
+            <div class="bg-primary-very-dark-magenta rounded-lg p-8 md:max-h-[90%] md:pb-14 md:self-center">
+                <div class="flex gap-6 items-center pt-2 pb-6">
+                    <img class="w-10 h-10 rounded-full" src="./images/image-irene.jpg" alt="Profile picture">
+                    <div>
+                        <h2 class="text-base font-bold pt-0.5">Irene Roberts</h2>
+                        <p class="text-base text-primary-soft-pink -mt-1">Verified Buyer</p>
+                    </div>
+                </div>
+                <p class="text-base pr-2">" Customer service is always excellent and very quick turn around. Completely
+                    delighted with the simplicity of the purchase and the speed of delivery. "
+                </p>
+            </div>
+            
+            <div class="bg-primary-very-dark-magenta rounded-lg p-8 md:max-h-[90%] md:pb-14 md:self-end">
+                <div class="flex gap-6 items-center pt-2 pb-6">
+                    <img class="w-10 h-10 rounded-full" src="./images/image-anne.jpg" alt="Profile picture">
+                    <div class="grid items-center">
+                        <h2 class="text-base font-bold pt-0.5">Anne Wallace</h2>
+                        <p class="text-base text-primary-soft-pink -mt-1">Verified Buyer</p>
+                    </div>
+                </div>
+                <p class="text-base pr-2">" Put an order with this company and can only praise them for the very high
+                    standard. Will definitely use them again and recommend them to everyone! "
+                </p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
