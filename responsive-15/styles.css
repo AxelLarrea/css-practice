@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+    --ff-poppins: "Poppins", serif;
+}
+
+@theme {
+    --font-poppins: var(--ff-poppins);
+    --font-open-sans: "Open Sans", serif;
+
+    /* Colors */
+    --color-primary-pink: hsl(322, 100%, 66%);
+
+    --color-neutral-very-pale-cyan: hsl(193, 100%, 96%);
+    --color-neutral-very-dark-cyan: hsl(192, 100%, 9%);
+    --color-neutral-grayish-blue: hsl(208, 11%, 55%);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-poppins);
+    font-weight: 600;
+}
