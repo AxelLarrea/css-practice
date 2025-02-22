@@ -9,3 +9,4 @@ Todos estos challenges fueron tomados de la web https://www.frontendmentor.io/ch
 # Deployed
 
 - "Practice 15 - Huddle landing page: " https://css-practice-15-psi.vercel.app
+- "Practice 16 - Bento grid: " https://css-practice-16.vercel.app
